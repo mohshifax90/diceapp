@@ -13,10 +13,3 @@ jobs:
     params:
       platform: android
       profile: development
-
-  build_ios:
-    name: Build iOS Development Client
-    type: build
-    params:
-      platform: ios
-      profile: development
