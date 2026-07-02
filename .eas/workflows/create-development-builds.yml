@@ -1,0 +1,22 @@
+name: Create Development Builds
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  build_android:
+    name: Build Android Development Client
+    type: build
+    params:
+      platform: android
+      profile: development
+
+  build_ios:
+    name: Build iOS Development Client
+    type: build
+    params:
+      platform: ios
+      profile: development
